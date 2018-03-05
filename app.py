@@ -1,6 +1,11 @@
 from flask import Flask, render_template
 import requests
 import json
+from socket import *
+
+sock = socket()
+sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+
 
 app = Flask(__name__)
 
