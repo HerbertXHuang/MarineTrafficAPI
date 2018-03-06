@@ -11,5 +11,3 @@ def index():
 	joke = data['value']['joke']
 
 	return render_template('index.html', joke = joke)
-
-app.run(debug = True)
