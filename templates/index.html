@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Herbert's Marine Traffic API</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+	h3 {
+		text-align: center;
+	}
+	img {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+</style>
+
+
 <body>
 
 <div class="w3-container">
-  <h3>Chuck Noris Jokes</h3>
+  <h3>Marine Traffic API</h3>
 
-  <div class="w3-card-12" style="width:80%">
-  
-    <img src="http://media.hotbirthdays.com/upload/2015/07/24/chuck-norris.jpg" alt="Norway" style="width:40%">
+  <div class="w3-card-12" style="width:100%">
+  	<br>
+    <img src="https://i.ytimg.com/vi/vISRn5qFrkM/maxresdefault.jpg" style="width:50%">
+    
     <div class="w3-container w3-center">
-      <p>{{ joke }}</p>
-   
+      <p>Enter the Keywords:</p>  
+
+      <form method="POST">
+	  	<input type="text" name="keyword">
+	    <input type="submit" name="action">
+      </form>
+	    {% if result %}
+	    	<p>{{ sum_res }}</p> 
+	    	{% autoescape false %}
+	    		<p>{{ result }}</p> 
+	    	{% endautoescape %}
+	    {% endif %}
+	    <br>
     </div>
+
   </div>
 </div>
 

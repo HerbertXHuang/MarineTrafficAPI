@@ -11,8 +11,8 @@ class MarineTraffic():
         myurl = '/en/ais/index/search/all/keyword:%s'%keyword.replace(' ', '%20')      
         res = self.Link2Results(myurl)       
         output = list(map(lambda x: (x[0], self.Link2Details(x[1], kind = x[0][1])), res))
-        print('%s results found for keyword: %s'%(len(output), keyword))
-        return output
+        sum_output = '%s results found for keyword: %s'%(len(output), keyword)
+        return sum_output, output
 
     def Link2Results(self, myurl):
         myurl = self.url + myurl
