@@ -1,1 +1,1 @@
-web: gunicorn app:app --log-file=-
+web: gunicorn Demyst API:app --log-file=-
