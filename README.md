@@ -5,7 +5,7 @@
 * https://ancient-falls-36830.herokuapp.com/query?keyword=YING+XIANG
 * https://ancient-falls-36830.herokuapp.com/query?keyword=AZOV+ANCH
 
-## Part 2. All the required packages are given below:
+## Part 2. All Required Packages
 
 beautifulsoup4==4.6.0  
 bs4==0.0.1  
