@@ -1,6 +1,6 @@
 ## Part 1. Test Instruction (try the following links to test the API)
 
-1. Go the the APP link: https://ancient-falls-36830.herokuapp.com and enter the keyword for query.
+1. Go the the APP link: https://ancient-falls-36830.herokuapp.com and enter the keyword for query;
 2. Or use the HTTP GET method directly, such as:
 * https://ancient-falls-36830.herokuapp.com/query?keyword=YING+XIANG
 * https://ancient-falls-36830.herokuapp.com/query?keyword=AZOV+ANCH
@@ -23,7 +23,7 @@ requests==2.18.4
 urllib3==1.22
 Werkzeug==0.14.1
 
-## Part 3. Self-evaluation (for how this API satisfies the requirement of the challenge)
+## Part 3. Self-evaluation
 
 ### Positive:
 1. It does not require API key and uses User-Agent of the Chrome Developer Tools;
@@ -32,8 +32,8 @@ Werkzeug==0.14.1
 
 ### Negative:
 
-1. The address I used for retrieving data from is: https://www.marinetraffic.com/en/ais/index/search/all?keyword=YUEJIANGCHENG90609, which does not accept other parameters like 'location'. Therefore, this API will only use one parameter, namely, 'keyword'.
-2. If the type you search is a 'Port', then you would notice there is a formatting problem with the variable 'Local Time', as I didn't find a way to convert it properly. For example: https://ancient-falls-36830.herokuapp.com/query?keyword=AZOV+ANCH
+1. The address I used for retrieving data from is: https://www.marinetraffic.com/en/ais/index/search/all?keyword=YUEJIANGCHENG90609, which does not accept other parameters like 'location'. Therefore, this API will only use one parameter, namely, 'keyword';
+2. If the type you search is a 'Port', then you would notice there is a formatting problem with the variable 'Local Time', as I didn't find a way to convert it properly. For example: https://ancient-falls-36830.herokuapp.com/query?keyword=AZOV+ANCH;
 3. Does not support too many records, so please do NOT enter keyword that will have hundreds of records (e.g. SHANGHAI), or the website might ban you temporarily.
 
 
