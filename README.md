@@ -1,4 +1,4 @@
-## Part 1. Test Instruction (try the following links to test the API)
+## Part 1. Test Instruction
 
 1. Go the the APP link: https://ancient-falls-36830.herokuapp.com and enter the keyword for query;
 2. Or use the HTTP GET method directly, such as:
@@ -7,20 +7,20 @@
 
 ## Part 2. All the required packages are given below:
 
-beautifulsoup4==4.6.0
-bs4==0.0.1
-certifi==2018.1.18
-chardet==3.0.4
-click==6.7
-Flask==0.12.2
-gunicorn==19.7.1
-idna==2.6
-itsdangerous==0.24
-Jinja2==2.10
-lxml==4.1.1
-MarkupSafe==1.0
-requests==2.18.4
-urllib3==1.22
+beautifulsoup4==4.6.0  
+bs4==0.0.1  
+certifi==2018.1.18  
+chardet==3.0.4    
+click==6.7  
+Flask==0.12.2  
+gunicorn==19.7.1  
+idna==2.6  
+itsdangerous==0.24  
+Jinja2==2.10  
+lxml==4.1.1  
+MarkupSafe==1.0  
+requests==2.18.4  
+urllib3==1.22  
 Werkzeug==0.14.1
 
 ## Part 3. Self-evaluation

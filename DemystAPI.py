@@ -3,6 +3,7 @@ from static.MarineTraffic import MarineTraffic
 
 app = Flask(__name__)
 
+# Make the output more human-friendly
 def prettify(array):
 	string = list(map(lambda x:  '; '.join(x[0]) + '<br>' + '<br>'.join(x[1]), array))		
 	for i in range(len(string)):
@@ -29,4 +30,4 @@ def search_page():
 		keyword = request.form['keyword']
 		return redirect(url_for('search_page', keyword = keyword))
 
-#app.run()
+# Do not use app.run() for deployment, error might occur otherwise
