@@ -24,14 +24,14 @@
   	<br>
     <img src="https://i.ytimg.com/vi/vISRn5qFrkM/maxresdefault.jpg" style="width:50%">
     
-    <div class="w3-container w3-center">
+    <div class="w3-container w3-center" align="center">
       <p>Enter the Keywords:</p>  
 
       <form method="POST">
 	  	<input type="text" name="keyword">
 	    <input type="submit" name="action">
       </form>
-	    {% if result %}
+	    {% if sum_res %}
 	    	<p>{{ sum_res }}</p> 
 	    	{% autoescape false %}
 	    		<p>{{ result }}</p> 
